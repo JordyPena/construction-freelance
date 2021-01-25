@@ -2,14 +2,15 @@ import React from "react";
 import * as Faicons from "react-icons/fa";
 import * as MdIcons from "react-icons/md";
 import "../styling/Header.css";
+import Logo from '../Images/logo.png'
 function Header() {
   return (
     <>
       <div className="header-column">
         <div className="header-row">
           <div className="header-left">
-            <h1>Straub Construction</h1>
-            <h3>Your Project Is Our Business</h3>
+            <img src={Logo} alt='logo'/>
+           
           </div>
 
           <div className="contact-right">
