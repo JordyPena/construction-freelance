@@ -1,0 +1,32 @@
+.header-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
+}
+
+span {
+  padding: 3px;
+}
+
