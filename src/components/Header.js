@@ -13,7 +13,7 @@ function Header() {
           </div>
 
           <div className="contact-right">
-            <span>Call 971-218-5250</span>
+            <span>971-218-5250</span>
             <span>CCB #207657</span>
             <span>WA #STRAUCL836CL</span>
             <span>
