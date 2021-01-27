@@ -12,31 +12,30 @@
   border-radius: 10px;
 }
 
-.right-arrow {
+
+.arrow {
   position: absolute;
   top: 50;
-  right: 32px;
   font-size: 3rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  opacity: 0.1;
 }
 
-.left-arrow {
+.arrow, .left {
   position: absolute;
-  top: 50;
   left: 32px;
-  font-size: 3rem;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
 }
 
-.hide {
-  
-    opacity: 0.0;
+.arrow, .right {
+  position: absolute;
+  right: 32px;
+}
+
+.arrow:hover {
+  opacity: 0.5;
 }
 
 .slide {

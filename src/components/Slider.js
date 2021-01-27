@@ -6,12 +6,12 @@ const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
-  const moveSlide = ({ target }) => {
-    const newSlideIndex = target.classList.contains("left")
-      ? current - 1
-      : current + 1;
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
 
-    current(newSlideIndex);
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
   if (!Array.isArray(slides) || slides.length <= 0) {
@@ -20,15 +20,18 @@ const Slider = ({ slides }) => {
 
   return (
     <section className="slider">
+      <div className='arrow'>
+
       <FaIcons.FaArrowAltCircleLeft
-        className={`left-arrow`}
-        onClick={moveSlide}
-      />
+          className='left'
+        onClick={prevSlide}
+        />
 
       <FaIcons.FaArrowAltCircleRight
-        className={`right-arrow`}
-        onClick={moveSlide}
+        className='right'
+        onClick={nextSlide}
       />
+      </div>
 
       {Data.map((slide, idx) => {
         return (
