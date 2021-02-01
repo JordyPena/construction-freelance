@@ -8,7 +8,7 @@ function Services() {
     <>
       <div className="services-container">
         <div>
-          <img src={newConstruction} />
+          <img src={newConstruction} alt='construction building'/>
           <h2>New Construction</h2>
           <p>
             Our experienced staff will help you design your new Shop, Garage,
@@ -20,7 +20,7 @@ function Services() {
         </div>
 
         <div>
-          <img src={Eckhart} />
+          <img src={Eckhart} alt='building'/>
           <h2>Kit Material</h2>
           <p>
             Are you the ultimate Do It Yourself person, or do you already have
@@ -32,7 +32,7 @@ function Services() {
         </div>
 
         <div>
-          <img src={Permit} />
+          <img src={Permit} alt='permit'/>
           <h2>Permit Services</h2>
           <p>
             No matter what project, if a permit is required please ask our staff
