@@ -19,6 +19,7 @@ function KitSummary1() {
 
         <div className="top">
           <img src={Kits[0].image} alt="building" />
+          <img src={Kits[0].Blueprint} alt="blueprint"/>
         </div>
 
         <div className="bottom">
