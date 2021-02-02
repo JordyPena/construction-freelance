@@ -30,10 +30,21 @@ const data = [
     RoofTitle: `24' x 36' x 12' Roof Only Kit`,
     KitPrice: `$9,300.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 1 - Entry Door 1 - 10' x 10' Framed Door Opening 
-    Flat Girts Trusses Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$464.00 12" overhang: +$478.00 24" Polycarbonate on one side wall: +$200.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: '1 - Entry Door'},
+      {material3: `1 - 10' x 10' Framed Door Opening`},
+      {material4: 'Flat Girts'},
+      {material5: 'Trusses'},
+      {material6: 'Premium Trim Package'}
+    ],
+    Features: [
+      {feature1: `2" Blanket Insulation in roof: +$464.00`},
+      {feature2: `12" Overhang: +$478.00`},
+      {feature3: `24" Polycarbonate on one side wall: +$200.00`},
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary1`,
   },
 
   {
@@ -44,11 +55,22 @@ const data = [
     RoofTitle: `30' x 36' x 12' Roof Only Kit`,
     KitPrice: `$10,360.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 1 - Entry Door 1 - 10' x 10' Overhead doors
-    Flat Girts Trusses Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$630.00 12" overhang: +$500.00 24" Polycarbonate on one side wall: +$225.00
-    4o3o Window: +$350`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: '1 - Entry Door'},
+      {material3: `1 - 10' x 10' Overhead Doors`},
+      {material4: 'Flat Girts'},
+      {material5: 'Trusses'},
+      {material6: 'Premium Trim Package'}
+    ],
+    Features: [
+      { feature1: `2" Blanket Insulation in roof: +$630.00` },
+      { feature2: `12" Overhang: +$500.00` },
+      { feature3: `24" Polycarbonate on one side wall: +$225.00` },
+      { feature4: `4o3o Window: +$350` },
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary2`,
   },
 
   {
@@ -59,11 +81,22 @@ const data = [
     RoofTitle: `36' x 48' x 16' Roof Only Kit`,
     KitPrice: `$16,150.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 1 - Entry Door 1 - 10' x 10' Framed Door Opening
-    Flat Girts Trusses Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$900.00 18" overhang: +$726.00 24" Polycarbonate on one side wall: +$300.00
-    4o3o Window: +$350`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: '1 - Entry Door'},
+      {material3: `1 - 10' x 10' Framed Door Opening`},
+      {material4: 'Flat Girts'},
+      {material5: 'Trusses'},
+      {material6: 'Premium Trim Package'}
+    ],
+    Features: [
+      { feature1: `2" Blanket Insulation in roof: +$900.00` },
+      { feature2: `18" Overhang: +$726.00` },
+      { feature3: `24" Polycarbonate on one side wall: +$300.00` },
+      { feature4: `4o3o Window: +$350` },
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary3`,
   },
 
   {
@@ -74,11 +107,21 @@ const data = [
     RoofTitle: `40' x 60' x 16' Roof Only Kit`,
     KitPrice: `$19,685.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 1 - Entry Door 1 - 10' x 14' Overhead doors
-    Flat Girts Trusses Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$1,216.00 24" overhang: +$1,268.00 24" Polycarbonate on one side wall: +$225.00
-    4o3o Window: +$350`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: '1 - Entry Door'},
+      {material3: `1 - 10' x 14' Overhead Doors`},
+      {material4: 'Flat Girts'},
+      {material5: 'Trusses'},
+      {material6: 'Premium Trim Package'}
+    ],
+    Features: [
+      { feature1: `2" Blanket Insulation in roof: +$1,216.00` },
+      { feature2: `24" Overhang: +$1,268.00` },
+      { feature3: `4o3o Window: +$350` },
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary4`,
   },
 
   {
@@ -89,10 +132,21 @@ const data = [
     RoofTitle: `50' x 84' x 16' Roof Only Kit`,
     KitPrice: `$29,915.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 1 - Entry Door 1 - 10' x 14' Overhead doors
-    Flat Girts Trusses Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$1,900.00 18" overhang: +$500.00 Engineering: +$1,000.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: '1 - Entry Door'},
+      {material3: `1 - 10' x 14' Overhead Doors`},
+      {material4: 'Flat Girts'},
+      {material5: 'Trusses'},
+      {material6: 'Premium Trim Package'}
+    ],
+    Features: [
+      { feature1: `2" Blanket Insulation in roof: +$1,900.00` },
+      { feature2: `18" Overhang: +$500.00` },
+      { feature3: `Engineering: +$1,000.00` },
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary5`,
   },
 
   {
@@ -103,10 +157,21 @@ const data = [
     RoofTitle: `60' x 120' x 16' Roof Only Kit`,
     KitPrice: `$42,650.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 1 - Entry Door 1 - 10' x 14' Overhead doors
-    Flat Girts Trusses Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$3,500.00 24" overhang: +$1,260.00 Engineering: +$1,200.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: '1 - Entry Door'},
+      {material3: `1 - 10' x 14' Overhead Doors`},
+      {material4: 'Flat Girts'},
+      {material5: 'Trusses'},
+      {material6: 'Premium Trim Package'}
+    ],
+    Features: [
+      { feature1: `2" Blanket Insulation in roof: +$3,500.00` },
+      { feature2: `24" Overhang: +$1,260.00` },
+      { feature3: `Engineering: +$1,260.00` },
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary6`,
   },
 ];
 

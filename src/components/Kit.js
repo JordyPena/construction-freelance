@@ -20,10 +20,11 @@ function Kit() {
     </div>
 
       <div className="kit-container">
-        {Kits.map((kit, idx) => {
+        {Kits.map((kit) => {
           return (
             <div className="kit-image">
-              <Link to='/kit-summary'>
+              {console.log(kit.Url)}
+              <Link to={kit.Url}>
               
               <img src={kit.image} alt="building"/>
               </Link>
@@ -39,7 +40,7 @@ function Kit() {
           );
         })}
 
-        {Roofs.map((roof, index) => {
+        {Roofs.map((roof) => {
           return (
             <div className="roof-image">
               <Link to='/roof-summary'>
