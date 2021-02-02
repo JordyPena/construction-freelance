@@ -2,7 +2,7 @@ import React from "react";
 import Kits from "../kit-data/Kit-data";
 import "../styling/Summary.css";
 import { useHistory } from "react-router-dom";
-function KitSummary1() {
+function KitSummary2() {
   const history = useHistory();
 
   const redirect = () => {
@@ -13,20 +13,20 @@ function KitSummary1() {
   return (
     <>
       <div className="summary-container">
-        <span className="red"> {Kits[0].Title}</span>
+        <span className="red"> {Kits[1].Title}</span>
 
-        <span> {Kits[0].KitPrice}</span>
+        <span> {Kits[1].KitPrice}</span>
 
         <div className="top">
-          <img src={Kits[0].image} alt="building" />
+          <img src={Kits[1].image} alt="building" />
         </div>
 
         <div className="bottom">
-          <span> {Kits[0].Description}</span>
+          <span> {Kits[1].Description}</span>
 
           <div className="material-container">
             Material Includes:
-            {Kits[0].Materials.map((material) => {
+            {Kits[1].Materials.map((material) => {
               return (
                 <div className="material-list">
                   {material.material1}
@@ -42,12 +42,13 @@ function KitSummary1() {
 
           <div className="features-container">
             Additional Features:
-            {Kits[0].Features.map((feature, index) => {
+            {Kits[1].Features.map((feature, index) => {
               return (
                 <div className="features-list">
                   {feature.feature1}
                   {feature.feature2}
                   {feature.feature3}
+                  {feature.feature4}
                 </div>
               );
             })}
@@ -66,4 +67,4 @@ function KitSummary1() {
   );
 }
 
-export default KitSummary1;
+export default KitSummary2;
