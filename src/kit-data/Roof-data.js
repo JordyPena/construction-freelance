@@ -16,10 +16,15 @@ const data = [
     Title: `24' x 36' x 12' Roof Only Kit`,
     KitPrice: `$5,000.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel
-    Trusses 
-    Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$346.00 12" overhang: +$478.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: 'Trusses'},
+      {material3: 'Premium Trim Package'},
+    ],
+    Features: [
+      {feature1: `2" Blanket Insulation in roof: +$346.00`},
+      {feature2: `12" Overhang: +$478.00`},
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
   },
 
@@ -28,11 +33,15 @@ const data = [
     Title: `30' x 36' x 12' Roof Only Kit`,
     KitPrice: `$5,850.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel
-    Trusses 
-    Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$630.00 
-    12" overhang: +$500.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: 'Trusses'},
+      {material3: 'Premium Trim Package'},
+    ],
+    Features: [
+      {feature1: `2" Blanket Insulation in roof: +$630.00`},
+      {feature2: `12" Overhang: +$500.00`},
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
   },
 
@@ -41,11 +50,15 @@ const data = [
     Title: `36' x 48' x 16' Roof Only Kit`,
     KitPrice: `$8,850.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel
-    Trusses 
-    Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$900.00 
-    12" overhang: +$600.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: 'Trusses'},
+      {material3: 'Premium Trim Package'},
+    ],
+    Features: [
+      {feature1: `2" Blanket Insulation in roof: +$900.00`},
+      {feature2: `12" Overhang: +$600.00`},
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
   },
 
@@ -54,10 +67,15 @@ const data = [
     Title: `40' x 60' x 16' Roof Only Kit`,
     KitPrice: `$12,350.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 
-    Trusses 
-    Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$1,216.00 24" overhang: +$1,268.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: 'Trusses'},
+      {material3: 'Premium Trim Package'},
+    ],
+    Features: [
+      {feature1: `2" Blanket Insulation in roof: +$1,216.00`},
+      {feature2: `12" Overhang: +$1,268.00`},
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
   },
 
@@ -66,12 +84,16 @@ const data = [
     Title: `50' x 84' x 16' Roof Only Kit`,
     KitPrice: `$19,280.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel
-    Trusses 
-    Premium Trim Package`,
-    Features: `2'' Blanket Insulation in roof: +$1,900.00 
-    18" overhang: +$500.00
-    Engineering: +$1,000.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: 'Trusses'},
+      {material3: 'Premium Trim Package'},
+    ],
+    Features: [
+      {feature1: `2" Blanket Insulation in roof: +$1,900.00`},
+      {feature2: `18" Overhang: +$500.00`},
+      {feature3: `Engineering: +$1,000.00`},
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
   },
 
@@ -80,10 +102,14 @@ const data = [
     Title: `60' x 120' x 16' Roof Only Kit`,
     KitPrice: `$28,350.00`,
     Description: `Engineered Building`,
-    Material: `Painted Steel 
-    Trusses 
-    Premium Trim Package`,
-    Features: `Engineering: +$1,000.00`,
+    Materials: [
+      {material1: 'Painted Steel'},
+      {material2: 'Trusses'},
+      {material3: 'Premium Trim Package'},
+    ],
+    Features: [
+      {feature1: `Engineering: +$1,000.00`},
+    ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
   },
 ];
