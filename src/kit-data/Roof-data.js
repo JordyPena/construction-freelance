@@ -26,6 +26,7 @@ const data = [
       {feature2: `12" Overhang: +$478.00`},
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary7`,
   },
 
   {
@@ -43,6 +44,7 @@ const data = [
       {feature2: `12" Overhang: +$500.00`},
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary8`,
   },
 
   {
@@ -60,6 +62,7 @@ const data = [
       {feature2: `12" Overhang: +$600.00`},
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary9`,
   },
 
   {
@@ -77,6 +80,7 @@ const data = [
       {feature2: `12" Overhang: +$1,268.00`},
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary10`,
   },
 
   {
@@ -95,6 +99,7 @@ const data = [
       {feature3: `Engineering: +$1,000.00`},
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary11`,
   },
 
   {
@@ -111,6 +116,7 @@ const data = [
       {feature1: `Engineering: +$1,000.00`},
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
+    Url: `/kit-summary12`,
   },
 ];
 

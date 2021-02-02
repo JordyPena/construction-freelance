@@ -43,7 +43,7 @@ function Kit() {
         {Roofs.map((roof) => {
           return (
             <div className="roof-image">
-              <Link to='/roof-summary'>
+              <Link to={roof.Url}>
 
               <img src={roof.Image} alt="roof" />
               </Link>
