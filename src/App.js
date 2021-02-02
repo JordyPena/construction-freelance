@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 import Kit from './components/Kit';
 import KitSummary1 from "./components/KitSummary1";
+import KitSummary2 from "./components/KitSummary2";
 function App() {
   return (
     <>
@@ -39,6 +40,12 @@ function App() {
         path="/kit-summary1"
         render={(props) => {
           return <KitSummary1 />;
+        }}
+      />
+       <Route
+        path="/kit-summary2"
+        render={(props) => {
+          return <KitSummary2 />;
         }}
       />
     </>
