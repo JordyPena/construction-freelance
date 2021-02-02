@@ -11,6 +11,12 @@ import KitSummary3 from "./components/KitSummary3";
 import KitSummary4 from "./components/KitSummary4";
 import KitSummary5 from "./components/KitSummary5";
 import KitSummary6 from "./components/KitSummary6";
+import KitSummary7 from "./components/KitSummary7";
+import KitSummary8 from "./components/KitSummary8";
+import KitSummary9 from "./components/KitSummary9";
+import KitSummary10 from "./components/KitSummary10";
+import KitSummary11 from "./components/KitSummary11";
+import KitSummary12 from "./components/KitSummary12";
 function App() {
   return (
     <>
@@ -74,6 +80,42 @@ function App() {
         path="/kit-summary6"
         render={(props) => {
           return <KitSummary6 />;
+        }}
+      />
+       <Route
+        path="/kit-summary7"
+        render={(props) => {
+          return <KitSummary7 />;
+        }}
+      />
+       <Route
+        path="/kit-summary8"
+        render={(props) => {
+          return <KitSummary8 />;
+        }}
+      />
+        <Route
+        path="/kit-summary9"
+        render={(props) => {
+          return <KitSummary9 />;
+        }}
+      />
+        <Route
+        path="/kit-summary10"
+        render={(props) => {
+          return <KitSummary10 />;
+        }}
+      />
+       <Route
+        path="/kit-summary11"
+        render={(props) => {
+          return <KitSummary11 />;
+        }}
+      />
+        <Route
+        path="/kit-summary12"
+        render={(props) => {
+          return <KitSummary12 />;
         }}
       />
     </>
