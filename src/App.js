@@ -17,6 +17,7 @@ import KitSummary9 from "./components/KitSummary9";
 import KitSummary10 from "./components/KitSummary10";
 import KitSummary11 from "./components/KitSummary11";
 import KitSummary12 from "./components/KitSummary12";
+import Constructed from "./components/Constructed";
 function App() {
   return (
     <>
@@ -39,6 +40,7 @@ function App() {
           return <Contact />;
         }}
       />
+      {/* Kit Pricing components */}
       <Route
         exact
         path="/kit-pricing"
@@ -116,6 +118,14 @@ function App() {
         path="/kit-summary12"
         render={(props) => {
           return <KitSummary12 />;
+        }}
+      />
+      {/*Constructed Pricing Components  */}
+      <Route
+        exact
+        path="/constructed-pricing"
+        render={(props) => {
+          return <Constructed />;
         }}
       />
     </>
