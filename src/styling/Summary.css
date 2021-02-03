@@ -10,6 +10,8 @@
 .top {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .bottom {
@@ -21,6 +23,11 @@
   margin: 10px;
 }
 
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .red {
   color: red;
 }
@@ -37,4 +44,21 @@
 .features-list, .material-list {
   padding: 5px; 
 }
+
+.image {
+  border-style:groove;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.shrink {
+  width: 100%;
+  padding: 20px;
+}
+
+.tiny {
+  width: 25%;
+  padding: 10px;
+}
+
 

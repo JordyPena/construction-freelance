@@ -9,7 +9,7 @@ function Kit() {
   const history = useHistory();
 
   const redirect = () => {
-    let path = 'newPath';
+
     history.push('/contact');
   }
   return (
@@ -20,13 +20,15 @@ function Kit() {
     </div>
 
       <div className="kit-container">
+        <div className='img-container'>
+
         {Kits.map((kit) => {
           return (
             <div className="kit-image">
               {console.log(kit.Url)}
               <Link to={kit.Url}>
               
-              <img src={kit.image} alt="building"/>
+              <img class='image-size' src={kit.image} alt="building"/>
               </Link>
             
               
@@ -39,13 +41,14 @@ function Kit() {
             </div>
           );
         })}
+        </div>
 
         {Roofs.map((roof) => {
           return (
             <div className="roof-image">
               <Link to={roof.Url}>
 
-              <img src={roof.Image} alt="roof" />
+              <img class='image-size' src={roof.Image} alt="roof" />
               </Link>
               <div className="roof-section">
                 <span> {roof.Title}</span>
