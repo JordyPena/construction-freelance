@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Kits from "../kit-data/Kit-data";
 import "../styling/Summary.css";
 import { useHistory } from "react-router-dom";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 function KitSummary2() {
   const history = useHistory();
+  const [currentImg, setCurrentImg] = useState(Kits[1].image);
 
   const redirect = () => {
-    let path = "newPath";
+   
     history.push("/contact");
   };
 
@@ -18,11 +20,20 @@ function KitSummary2() {
         <span> {Kits[1].KitPrice}</span>
 
         <div className="top">
-          <img src={Kits[1].image} alt="building" />
-          <img src={Kits[1].Blueprint} alt="blueprint"/>
+          <div className="image">
+            <TransformWrapper>
+              <TransformComponent>
+                <img className="shrink" src={currentImg} alt="blueprint" />
+              </TransformComponent>
+            </TransformWrapper>
+          </div>
         </div>
 
         <div className="bottom">
+        <div className="bottom-row">
+          {<img onClick={(e) => setCurrentImg(e.target.src)} className='tiny' src={Kits[1].image} alt='building'/>}
+         {<img onClick={(e) => setCurrentImg(e.target.src)} className='tiny' src={Kits[1].Blueprint} alt='building'/>}
+          </div>
           <span> {Kits[1].Description}</span>
 
           <div className="material-container">

@@ -2,11 +2,12 @@ import React from "react";
 import Kits from "../kit-data/Roof-data";
 import "../styling/Summary.css";
 import { useHistory } from "react-router-dom";
+import { TransformWrapper, TransformComponent} from 'react-zoom-pan-pinch'
 function KitSummary11() {
   const history = useHistory();
 
   const redirect = () => {
-    let path = "newPath";
+    
     history.push("/contact");
   };
 
@@ -18,7 +19,13 @@ function KitSummary11() {
         <span> {Kits[4].KitPrice}</span>
 
         <div className="top">
-          <img src={Kits[4].Image} alt="building" />
+        <div className="image">
+            <TransformWrapper>
+              <TransformComponent>
+                <img className="shrink" src={Kits[4].Image} alt="blueprint" />
+              </TransformComponent>
+            </TransformWrapper>
+          </div>
         </div>
 
         <div className="bottom">
