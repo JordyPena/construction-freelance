@@ -4,14 +4,15 @@ import "../styling/Kit.css";
 import Kits from "../kit-data/Kit-data";
 import Roofs from "../kit-data/Roof-data";
 import {useHistory} from 'react-router-dom'
-function Kit() {
 
+function Kit() {
   const history = useHistory();
 
   const redirect = () => {
 
     history.push('/contact');
   }
+  
   return (
     <>
     <div className="main-contact">
@@ -25,8 +26,8 @@ function Kit() {
         {Kits.map((kit) => {
           return (
             <div className="kit-image">
-              {console.log(kit.Url)}
-              <Link to={kit.Url}>
+            
+              <Link to={`kit-summary/${kit.id}`}>
               
               <img class='image-size' src={kit.image} alt="building"/>
               </Link>
@@ -48,7 +49,7 @@ function Kit() {
             <div className="roof-image">
               <Link to={roof.Url}>
 
-              <img class='image-size' src={roof.Image} alt="roof" />
+              <img className='image-size' src={roof.Image} alt="roof" />
               </Link>
               <div className="roof-section">
                 <span> {roof.Title}</span>
