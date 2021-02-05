@@ -17,6 +17,7 @@ import FourtyRoof from "../Kit-images/40-roof.jpeg";
 import Fifty from "../Kit-images/50.jpeg";
 import FiftyBp from "../Kit-images/50-blueprint.jpeg";
 import FiftyRoof from "../Kit-images/50-roof.jpeg";
+
 import Sixty from "../Kit-images/60.png";
 import SixtyBp from "../Kit-images/60-blueprint.png";
 import SixtyRoof from "../Kit-images/60-roof.jpeg";
@@ -66,7 +67,7 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary1`,
+    id: 1,
     constructedUrl: `/constructed-summary1`,
   },
 
@@ -113,7 +114,7 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary2`,
+    id: 2,
     constructedUrl: `/constructed-summary2`,
   },
 
@@ -160,7 +161,7 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary3`,
+    id: 3,
     constructedUrl: `/constructed-summary3`,
   },
 
@@ -206,7 +207,7 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary4`,
+    id: 4,
     constructedUrl: `/constructed-summary4`,
   },
 
@@ -251,7 +252,7 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary5`,
+    id: 5,
     constructedUrl: `/constructed-summary5`,
   },
 
@@ -293,7 +294,7 @@ const data = [
       { feature1: `2" Blanket Insulation in roof: +$3,500.00` },
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
-    Url: `/kit-summary6`,
+    id: 6,
   },
 ];
 
