@@ -50,7 +50,7 @@ function Menu() {
             </Link>
           </li>
           <li className="nav-text">
-            <Link to="/monthly-specials">
+            <Link to="/special-pricing">
               <MdIcons.MdMoneyOff size={40} /> Monthly Specials
             </Link>
           </li>

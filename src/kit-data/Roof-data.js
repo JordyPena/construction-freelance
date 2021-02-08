@@ -12,7 +12,7 @@ import SixtyRoof from "../Kit-images/60-roof.jpeg";
 
 const data = [
   {
-    Image: TwentyFourRoof,
+    image: TwentyFourRoof,
     Title: `24' x 36' x 12' Roof Only Kit`,
     constructedTitle: `24' x 36' x 12' Roof Only`,
     KitPrice: `$5,000.00`,
@@ -44,12 +44,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary7`,
-    constructedUrl: `/constructed-summary7`,
+    id: 7
   },
 
   {
-    Image: ThirtyRoof,
+    image: ThirtyRoof,
     Title: `30' x 36' x 12' Roof Only Kit`,
     constructedTitle: `30' x 36' x 12' Roof Only`,
     KitPrice: `$5,850.00`,
@@ -81,12 +80,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary8`,
-    constructedUrl: `/constructed-summary8`,
+    id: 8
   },
 
   {
-    Image: ThirtySixRoof,
+    image: ThirtySixRoof,
     Title: `36' x 48' x 16' Roof Only Kit`,
     constructedTitle: `36' x 48' x 16' Roof Only`,
     KitPrice: `$8,850.00`,
@@ -118,12 +116,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary9`,
-    constructedUrl: `/constructed-summary9`,
+    id: 9
   },
 
   {
-    Image: FourtyRoof,
+    image: FourtyRoof,
     Title: `40' x 60' x 16' Roof Only Kit`,
     constructedTitle: `40' x 60' x 16' Roof Only`,
     KitPrice: `$12,350.00`,
@@ -148,19 +145,18 @@ const data = [
     ],
     Features: [
       { feature1: `2" Blanket Insulation in roof: +$1,216.00` },
-      { feature2: `12" Overhang: +$1,268.00` },
+      { feature2: `24" Overhang: +$1,268.00` },
     ],
     constructedFeatures: [
       { feature1: `2" Blanket Insulation in roof: +$1,216.00` },
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary10`,
-    constructedUrl: `/constructed-summary10`,
+    id: 10
   },
 
   {
-    Image: FiftyRoof,
+    image: FiftyRoof,
     Title: `50' x 84' x 16' Roof Only Kit`,
     constructedTitle: `50' x 84' x 16' Roof Only`,
     KitPrice: `$19,280.00`,
@@ -193,12 +189,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary11`,
-    constructedUrl: `/constructed-summary11`,
+    id: 11
   },
 
   {
-    Image: SixtyRoof,
+    image: SixtyRoof,
     Title: `60' x 120' x 16' Roof Only Kit`,
     constructedTitle: `60' x 120' x 16' Roof Only`,
     KitPrice: `$28,350.00`,
@@ -224,8 +219,7 @@ const data = [
     Features: [{ feature1: `Engineering: +$1,000.00` }],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    Url: `/kit-summary12`,
-    constructedUrl: `/constructed-summary12`,
+   id: 12
   },
 ];
 

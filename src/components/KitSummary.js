@@ -1,50 +1,25 @@
 import React, { useState, useEffect } from "react";
-import Kits from "../kit-data/Kit-data";
 import "../styling/Summary.css";
 import { useHistory } from "react-router-dom";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
-function KitSummary1({ match }) {
+function KitSummary(props) {
   const history = useHistory();
-  const [kitImg, setKitImg] = useState();
-
-  const [title, setTitle] = useState();
-  const [kitPrice, setKitPrice] = useState();
-  const [description, setDescription] = useState();
-  const [materials, setMaterials] = useState();
-  const [features, setFeatures] = useState();
-  const [disclosure, setDisclosure] = useState();
-  const [blueprint, setBlueprint] = useState();
-  const [selectedImg, setSelectedImg] = useState()
+ const [selectedImg, setSelectedImg] = useState(props.item.image)
+ const [item, setItem] = useState()
+ 
 
   const redirect = () => {
     history.push("/contact");
   };
 
-  
-
-  useEffect(() => {
-    const found = Kits.find((kit) => {
-      return kit.id === parseInt(match.params.kitid);
-    });
-
-   
-    setSelectedImg(found.image)
-    setKitImg(found.image);
-    setTitle(found.Title);
-    setKitPrice(found.KitPrice);
-    setMaterials(found.Materials);
-    setFeatures(found.Features);
-    setDisclosure(found.Disclosure);
-    setBlueprint(found.Blueprint);
-  }, []);
-
+  console.log(props.item)
   return (
     <>
       <div className="summary-container">
-        <span className="red"> {title}</span>
+        <span className="red"> {props.item.Title}</span>
 
-        <span> {kitPrice}</span>
+        <span> {props.item.KitPrice}</span>
 
         <div className="top">
           <div className="image">
@@ -57,12 +32,14 @@ function KitSummary1({ match }) {
         </div>
 
         <div className="bottom">
-          <div className="bottom-row">
+          {/* if no blueprint don't render  */}
+          {props.item.Blueprint && (
+            <div className="bottom-row">
             {
               <img
                 onClick={(e) => setSelectedImg(e.target.src)}
                 className="tiny"
-                src={kitImg}
+                src={props.item.image}
                 alt="building"
               />
             }
@@ -70,16 +47,18 @@ function KitSummary1({ match }) {
               <img
                 onClick={(e) => setSelectedImg(e.target.src)}
                 className="tiny"
-                src={blueprint}
+                src={props.item.Blueprint}
                 alt="building"
               />
             }
           </div>
-          <span> {description}</span>
+          )}
+          
+          <span> {props.item.Description}</span>
 
           <div className="material-container">
             Material Includes:
-            {materials && materials.map((material, idx) => {
+            {props.item.Materials && props.item.Materials.map((material, idx) => {
               return (
                 <div className="material-list" key={idx}>
                   {material.material1}
@@ -88,6 +67,23 @@ function KitSummary1({ match }) {
                   {material.material4}
                   {material.material5}
                   {material.material6}
+                  {material.material7}
+                  {material.material8}
+                  {material.material9}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="features-container">
+            Labor Includes:
+            {props.item.labors && props.item.labors.map((labor, index) => {
+              return (
+                <div className="features-list" key={index}>
+                  {labor.labor1}
+                  {labor.labor2}
+                  {labor.labor3}
+                  {labor.labor4}
                 </div>
               );
             })}
@@ -95,7 +91,7 @@ function KitSummary1({ match }) {
 
           <div className="features-container">
             Additional Features:
-            {features && features.map((feature, index) => {
+            {props.item.Features && props.item.Features.map((feature, index) => {
               return (
                 <div className="features-list" key={index}>
                   {feature.feature1}
@@ -108,7 +104,7 @@ function KitSummary1({ match }) {
           </div>
         </div>
 
-        <div>*{disclosure}</div>
+        <div>*{props.item.Disclosure}</div>
 
         <div>
           <button onClick={() => redirect()} className="redirect-button">
@@ -120,4 +116,4 @@ function KitSummary1({ match }) {
   );
 }
 
-export default KitSummary1;
+export default KitSummary;
