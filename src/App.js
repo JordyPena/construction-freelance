@@ -11,7 +11,7 @@ import Roofs from "./kit-data/Roof-data";
 import Constructed from "./kit-data/Constructed-data";
 import ConstructedRoof from "./kit-data/ConstructedRoof-data";
 import Specials from "./kit-data/Special-data";
-
+import About from "./components/About";
 function App() {
   return (
     <>
@@ -32,6 +32,14 @@ function App() {
         path="/contact"
         render={(props) => {
           return <Contact />;
+        }}
+      />
+
+      <Route
+        exact
+        path="/about"
+        render={(props) => {
+          return <About />;
         }}
       />
       {/* Kit Pricing components */}
@@ -61,12 +69,7 @@ function App() {
         exact
         path="/special-pricing"
         render={(props) => {
-          return (
-            <Kit
-              kits={Specials}
-              match={props.match}
-            />
-          );
+          return <Kit kits={Specials} match={props.match} />;
         }}
       />
 

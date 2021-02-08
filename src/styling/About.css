@@ -1,0 +1,17 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-column, .bottom-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 7px;
+}
+
+.about-headers {
+  color: rgb(158, 25, 25);
+}
