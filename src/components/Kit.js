@@ -1,61 +1,79 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styling/Kit.css";
-import Kits from "../kit-data/Kit-data";
-import Roofs from "../kit-data/Roof-data";
-import {useHistory} from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 
-function Kit() {
+function Kit(props) {
   const history = useHistory();
 
   const redirect = () => {
-
-    history.push('/contact');
-  }
-  
+    history.push("/contact");
+  };
+console.log(props.kits)
   return (
     <>
-    <div className="main-contact">
-
-      <button onClick={() => redirect()} className='main-button'>Contact Us</button>
-    </div>
+      <div className="main-contact">
+        <button onClick={() => redirect()} className="main-button">
+          Contact Us
+        </button>
+      </div>
 
       <div className="kit-container">
-        <div className='img-container'>
+        <div className="img-container">
+        
+          {props.kits.map((kit) => {
+            return (
+              <div className="kit-image">
+                {props.match.path === "/constructed-pricing" ? (
+                    <Link to={`constructed-summary/${kit.id}`}>
+                      <img class="image-size" src={kit.image} alt="building" />
+                    </Link>
+                  ) : props.match.path === "/kit-pricing" ? (
+                    <Link to={`kit-summary/${kit.id}`}>
+                      <img class="image-size" src={kit.image} alt="building" />
+                    </Link>
+                  ) : (
+                    <Link to={`special-summary/${kit.id}`}>
+                      <img class="image-size" src={kit.image} alt="building" />
+                    </Link>
+                  )
+                }
 
-        {Kits.map((kit) => {
-          return (
-            <div className="kit-image">
-            
-              <Link to={`kit-summary/${kit.id}`}>
-              
-              <img class='image-size' src={kit.image} alt="building"/>
-              </Link>
-            
-              
-              <div className="kit-section">
-                <span>{kit.Title} </span>
-                <span>{kit.KitPrice}</span>
-                <span>{kit.Description}</span>
-                <button onClick={() => redirect()} className='redirect-button'>Contact Us</button>
+                <div className="kit-section">
+                  <span>{kit.Title} </span>
+                  <span>{kit.KitPrice}</span>
+                  <span>{kit.Description}</span>
+                  <button
+                    onClick={() => redirect()}
+                    className="redirect-button"
+                  >
+                    Contact Us
+                  </button>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
         </div>
 
-        {Roofs.map((roof) => {
+        {props.roofs && props.roofs.map((roof) => {
           return (
             <div className="roof-image">
-              <Link to={roof.Url}>
-
-              <img className='image-size' src={roof.Image} alt="roof" />
-              </Link>
+              {props.match.path === "/constructed-pricing" ? (
+                <Link to={`constructedRoof-summary/${roof.id}`}>
+                  <img className="image-size" src={roof.image} alt="roof" />
+                </Link>
+              ) : (
+                <Link to={`roof-summary/${roof.id}`}>
+                  <img className="image-size" src={roof.image} alt="roof" />
+                </Link>
+              )}
               <div className="roof-section">
                 <span> {roof.Title}</span>
                 <span>{roof.KitPrice}</span>
                 <span> {roof.Description}</span>
-                <button onClick={() => redirect()} className='redirect-button'>Contact Us</button>
+                <button onClick={() => redirect()} className="redirect-button">
+                  Contact Us
+                </button>
               </div>
             </div>
           );
