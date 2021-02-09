@@ -1,14 +1,12 @@
 import React from "react";
-import newConstruction from "../Images/new-construction.jpg";
-import Eckhart from "../Images/eckhart.jpg";
-import Permit from "../Images/permit.jpg";
+
 
 function Services() {
   return (
     <>
       <div className="services-container">
         <div>
-          <img src={newConstruction} alt='construction building'/>
+          <img src={`${process.env.PUBLIC_URL}/images/new-construction.jpg`} alt='construction building'/>
           <h2>New Construction</h2>
           <p>
             Our experienced staff will help you design your new Shop, Garage,
@@ -20,7 +18,7 @@ function Services() {
         </div>
 
         <div>
-          <img src={Eckhart} alt='building'/>
+          <img src={`${process.env.PUBLIC_URL}/images/eckhart.jpg`} alt='building'/>
           <h2>Kit Material</h2>
           <p>
             Are you the ultimate Do It Yourself person, or do you already have
@@ -32,7 +30,7 @@ function Services() {
         </div>
 
         <div>
-          <img src={Permit} alt='permit'/>
+          <img src={`${process.env.PUBLIC_URL}/images/permit.jpg`} alt='permit'/>
           <h2>Permit Services</h2>
           <p>
             No matter what project, if a permit is required please ask our staff

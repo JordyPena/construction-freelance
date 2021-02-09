@@ -12,7 +12,10 @@ import Constructed from "./kit-data/Constructed-data";
 import ConstructedRoof from "./kit-data/ConstructedRoof-data";
 import Specials from "./kit-data/Special-data";
 import About from "./components/About";
+import Gallery from "./components/Gallery";
+
 function App() {
+  
   return (
     <>
       <Header />
@@ -42,6 +45,15 @@ function App() {
           return <About />;
         }}
       />
+
+      <Route
+        exact
+        path="/gallery"
+        render={(props) => {
+          return <Gallery/>;
+        }}
+      />
+      
       {/* Kit Pricing components */}
       <Route
         exact
