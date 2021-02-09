@@ -1,7 +1,8 @@
-import Data from "../slider-data/Slider-data";
+
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import "../styling/Slider.css";
+
 const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -33,12 +34,12 @@ const Slider = ({ slides }) => {
       />
       </div>
 
-      {Data.map((slide, idx) => {
+      {slides.map((url, idx) => {
         return (
           <div className={idx === current ? "slide active" : "slide"} key={idx}>
             {idx === current && (
               <img
-                src={slide.image}
+                src={url}
                 alt="construction-building"
                 className="image"
               />

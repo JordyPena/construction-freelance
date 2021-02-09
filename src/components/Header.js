@@ -2,14 +2,14 @@ import React from "react";
 import * as Faicons from "react-icons/fa";
 import * as MdIcons from "react-icons/md";
 import "../styling/Header.css";
-import Logo from '../Images/logo.png'
+
 function Header() {
   return (
     <>
       <div className="header-column">
         <div className="header-row">
           <div className="header-left">
-            <img src={Logo} alt='logo'/>
+            <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt='logo'/>
            
           </div>
 
