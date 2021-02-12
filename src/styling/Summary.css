@@ -29,7 +29,7 @@
   align-items: center;
 }
 .red {
-  color: red;
+  color: #9e2b2b;
 }
 
 .material-container, .features-container {
@@ -45,20 +45,21 @@
   padding: 5px; 
 }
 
-.image {
-  border-style:groove;
-  margin: 10px;
+.kit-image {
+  margin: 40px;
   border-radius: 5px;
 }
 
 .shrink {
   width: 100%;
   padding: 20px;
+  border-radius: 25px;
 }
 
 .tiny {
   width: 25%;
   padding: 10px;
+  border-radius: 15px;
 }
 
 

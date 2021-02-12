@@ -57,7 +57,7 @@ console.log(props.kits)
 
         {props.roofs && props.roofs.map((roof) => {
           return (
-            <div className="roof-image">
+            <div className="kit-image">
               {props.match.path === "/constructed-pricing" ? (
                 <Link to={`constructedRoof-summary/${roof.id}`}>
                   <img className="image-size" src={roof.image} alt="roof" />

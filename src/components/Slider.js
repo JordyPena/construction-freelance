@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import "../styling/Slider.css";
@@ -33,7 +32,7 @@ const Slider = ({ slides }) => {
         onClick={nextSlide}
       />
       </div>
-
+    
       {slides.map((url, idx) => {
         return (
           <div className={idx === current ? "slide active" : "slide"} key={idx}>
@@ -47,6 +46,8 @@ const Slider = ({ slides }) => {
           </div>
         );
       })}
+    
+     
     </section>
   );
 };

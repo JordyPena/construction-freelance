@@ -2,11 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styling/Menu.css";
 import * as IoIcons from "react-icons/io";
-import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
-import * as MdIcons from "react-icons/md";
-import * as RiIcons from "react-icons/ri";
-import * as BsIcons from "react-icons/bs";
+
 
 function Menu() {
   const [sidebar, setSidebar] = useState(false);
@@ -26,12 +23,12 @@ function Menu() {
         <ul className="nav-menu-items" onClick={showSidebar}>
           <li className="navbar-toggle">
             <Link to="#" className="menu-bars">
-              <AiIcons.AiOutlineClose />
+              <FaIcons.FaWindowClose />
             </Link>
           </li>
           <li className="nav-text">
             <Link to="/">
-              <AiIcons.AiFillHome size={40} /> Home
+              <FaIcons.FaHome size={40} /> Home
             </Link>
           </li>
           <li className="nav-text">
@@ -51,17 +48,17 @@ function Menu() {
           </li>
           <li className="nav-text">
             <Link to="/special-pricing">
-              <MdIcons.MdMoneyOff size={40} /> Monthly Specials
+              <FaIcons.FaRegMoneyBillAlt size={40} /> Monthly Specials
             </Link>
           </li>
           <li className="nav-text">
             <Link to="/about">
-              <RiIcons.RiInformationFill size={40} /> About
+              <FaIcons.FaInfoCircle size={40} /> About
             </Link>
           </li>
           <li className="nav-text">
             <Link to="/gallery">
-              <BsIcons.BsImages size={40} /> Gallery
+              <FaIcons.FaImages size={40} /> Gallery
             </Link>
           </li>
         </ul>

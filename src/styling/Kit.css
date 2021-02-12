@@ -9,12 +9,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-}
-
-.roof-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: 1px 3px 8px rgba(41,31,30,.1);
 }
 
 .kit-section {
@@ -34,17 +29,17 @@
 }
 
 .redirect-button {
-  background-color: red;
+  background-color: #9e2b2b;
   color: white;
   border-radius: 5px;
   margin-bottom: 40px;
   padding: 5px;
-  margin: 5px;
+  margin: 15px;
   border: none;
 }
 
 .redirect-button:hover {
-  background-color: rgb(168, 55, 55);
+  background-color: #6d0404;
 }
 
 .main-contact {
@@ -56,7 +51,7 @@
 
 
 .main-button {
-  background-color: red;
+  background-color: #9e2b2b;
   color: white;
   border-radius: 5px;
   margin: 5px;
@@ -69,10 +64,11 @@
 }
 
 .main-button:hover {
-  background-color: rgb(168, 55, 55);
+  background-color: #6d0404;
 }
 
 .image-size {
   height: 100%;
   width: 100%;
+  border-radius: 5px;
 }

@@ -1,0 +1,31 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-service, .second-service, .third-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+ line-height: 20px;
+}
+
+.services-images {
+  width: 50%;
+  border-radius: 4px;
+}
+
+.thirdServices-images {
+  border-radius: 4px;
+}
+
+.services-headers {
+  color: #9e2b2b;
+}
+
+.services-p {
+  margin: 5px;
+}

@@ -1,6 +1,6 @@
 import Data from "../Gallery-data/Gallery-data";
-import React, { useState } from "react";
-import "../styling/Gallery.css";
+import React from "react";
+import "../styling/Slider.css";
 import Slider from "./Slider"
 const Gallery = () => {
   
@@ -10,8 +10,8 @@ const Gallery = () => {
         {Data.map((slide) => {
           return (
             <>
-              <h2>{slide.title}</h2>
-              <p>{slide.description}</p>
+              <h2 className="gallery-title">{slide.title}</h2>
+              <p className="gallery-description">{slide.description}</p>
               {slide.link && (
                 <a className="slide-link" href={slide.link} target="_blank">
                   Pumpkin patch
@@ -19,7 +19,7 @@ const Gallery = () => {
               )}
            
 
-             <Slider slides={slide.url}/>
+             <Slider slides={slide.url} />
             </>
           );
         })}

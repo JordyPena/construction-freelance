@@ -6,8 +6,8 @@ function Contact() {
     <>
       <div>
 
-      <h2>Submit this form so we can contact you</h2>
-      <h2>Feel free to call us at 971-218-5250</h2>
+      <h2 className="contact-headers">Submit this form so we can contact you</h2>
+      <h2  className="contact-headers">Feel free to call us at 971-218-5250</h2>
       </div>
 
         <div className="bottom-item">
