@@ -16,3 +16,24 @@
 .about-headers {
   color: #9e2b2b;
 }
+
+.mt-hood {
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .about-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-p {
+    width: 50%;
+  }
+
+  .about-bottom {
+    text-align: center;
+  }
+}

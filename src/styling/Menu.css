@@ -1,7 +1,7 @@
 
   .navbar {
     background-color: none;
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -23,7 +23,7 @@
   }
   
   .nav-menu {
-    background-color: #6d0404;
+    background-color: #beb8b8;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -34,6 +34,7 @@
     transition: 850ms;
     z-index: 999;
     border: none;
+    border-radius: 5px;
   }
   
   .nav-menu.active {

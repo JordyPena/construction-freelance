@@ -1,25 +1,25 @@
 import Data from "../Gallery-data/Gallery-data";
 import React from "react";
-import "../styling/Slider.css";
-import Slider from "./Slider"
+import "../styling/Gallery.css";
+import Slider from "./Slider";
 const Gallery = () => {
-  
   return (
     <>
-      <div>
+      <div className="gallery-container">
         {Data.map((slide) => {
           return (
             <>
               <h2 className="gallery-title">{slide.title}</h2>
-              <p className="gallery-description">{slide.description}</p>
               {slide.link && (
                 <a className="slide-link" href={slide.link} target="_blank">
-                  Pumpkin patch
+                  Check out the Pumpkin Patch here
                 </a>
               )}
-           
+              <p className="gallery-description">{slide.description}</p>
 
-             <Slider slides={slide.url} />
+              <div className="slider-div">
+                <Slider slides={slide.url} />
+              </div>
             </>
           );
         })}

@@ -10,9 +10,9 @@ const data = [
   },
   {
     title: "The Pumpkin Patch on Sauvie Island Project",
-    description: `This project is 52' x 108' overall including the wrap around sheds. This was built as the main machine shop for the farm and it also doubles as concessions. During the Pumpkin Patches busy season the farm will serve pop corn, candy apples and other delicious foods to appease its guest. Check out more information about the Pumpkin Patch here:`,
+    description: `This project is 52' x 108' overall including the wrap around sheds. This was built as the main machine shop for the farm and it also doubles as concessions. During the Pumpkin Patches busy season the farm will serve pop corn, candy apples and other delicious foods to appease its guest.`,
     url: [
-      "images/pumpkin1.jpg",
+      "images/egger.jpg",
       "images/pumpkin2.jpg",
     ],
     link: "http://www.thepumpkinpatch.com/",
