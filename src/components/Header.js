@@ -9,7 +9,7 @@ function Header() {
       <div className="header-column">
         <div className="header-row">
           <div className="header-left">
-            <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt='logo'/>
+            <img className="header-image" src={`${process.env.PUBLIC_URL}/images/logo.png`} alt='logo'/>
            
           </div>
 

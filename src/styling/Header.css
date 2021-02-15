@@ -34,3 +34,41 @@ span {
   padding: 3px;
 }
 
+.header-image {
+  width: 100%;
+}
+@media only screen and (min-width: 1100px) {
+
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 25%;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .contact-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+  }
+
+  .header-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-image {
+    width: 120%;
+  }
+
+}
