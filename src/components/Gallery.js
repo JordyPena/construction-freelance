@@ -2,7 +2,7 @@ import Data from "../Gallery-data/Gallery-data";
 import React from "react";
 import "../styling/Gallery.css";
 import Slider from "./Slider";
-const Gallery = () => {
+const Gallery = ({match}) => {
   return (
     <>
       <div className="gallery-container">
@@ -18,7 +18,9 @@ const Gallery = () => {
               <p className="gallery-description">{slide.description}</p>
 
               <div className="slider-div">
-                <Slider slides={slide.url} />
+                
+                <Slider slides={slide.url} match={match}/>
+
               </div>
             </>
           );

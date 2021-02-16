@@ -15,7 +15,9 @@
 
   .arrow {
     position: absolute;
-    top: 30%;
+
+    top: 18%;
+
     font-size: 3rem;
     color: #000;
     z-index: 10;

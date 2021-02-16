@@ -26,7 +26,7 @@ function App() {
         exact
         path="/"
         render={(props) => {
-          return <Home />;
+          return <Home match={props.match}/>;
         }}
       />
 
@@ -50,7 +50,7 @@ function App() {
         exact
         path="/gallery"
         render={(props) => {
-          return <Gallery/>;
+          return <Gallery match={props.match}/>;
         }}
       />
       
