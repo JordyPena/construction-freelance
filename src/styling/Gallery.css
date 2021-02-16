@@ -13,7 +13,6 @@
   height: 80%;
 }
 
-
 .gallery-arrow {
   position: absolute;
   top: -10%;
@@ -25,12 +24,14 @@
   opacity: 0.1;
 }
 
-.gallery-arrow, .gallery-left {
+.gallery-arrow,
+.gallery-left {
   position: absolute;
   left: 40px;
 }
 
-.gallery-arrow, .gallery-right {
+.gallery-arrow,
+.gallery-right {
   position: absolute;
   right: 40px;
 }
@@ -97,9 +98,13 @@
   .arrow {
     top: -9%;
   }
-  .arrow, .gallery-left {
+  .arrow,
+  .gallery-left {
     left: 30px;
   }
 
-  .arrow, .gallery-right {
+  .arrow,
+  .gallery-right {
+    right: 30px;
+  }
 }
