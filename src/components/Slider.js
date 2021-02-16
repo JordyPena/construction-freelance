@@ -7,9 +7,7 @@ const Slider = ({ slides, match }) => {
   const [current, setCurrent] = useState(0);
   const [currentPath, setCurrentPath] = useState(path)
   const length = slides.length;
-  console.log(match)
- 
-  console.log('this is path', path)
+
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };

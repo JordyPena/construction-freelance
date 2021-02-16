@@ -10,8 +10,6 @@ function KitSummary(props) {
   const redirect = () => {
     history.push("/contact");
   };
-
-  console.log(props.item);
   return (
     <>
       <div className="summary-container">
