@@ -1,4 +1,4 @@
-.slider {
+.gallery-slider {
   position: relative;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 
-.arrow {
+.gallery-arrow {
   position: absolute;
   top: -10%;
   font-size: 3rem;
@@ -25,12 +25,12 @@
   opacity: 0.1;
 }
 
-.arrow, .left {
+.gallery-arrow, .gallery-left {
   position: absolute;
   left: 40px;
 }
 
-.arrow, .right {
+.gallery-arrow, .gallery-right {
   position: absolute;
   right: 40px;
 }
@@ -98,11 +98,11 @@
     top: -9%;
   }
 
-  .arrow, .left {
+  .arrow, .gallery-left {
     left: 30px;
   }
 
-  .arrow, .right {
+  .arrow, .gallery-right {
     right: 30px;
   }
 }

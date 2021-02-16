@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import "../styling/Slider.css";
 
-const Slider = ({ slides }) => {
+const Slider = ({ slides, match }) => {
+  const {path} = match;
   const [current, setCurrent] = useState(0);
+  const [currentPath, setCurrentPath] = useState(path)
   const length = slides.length;
-
+  console.log(match)
+ 
+  console.log('this is path', path)
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -19,16 +23,16 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
-      <div className='arrow'>
+    <section className={`${(currentPath === '/') ? "slider" : "gallery-slider" }`}>
+      <div className={`${(currentPath === '/') ? "arrow" : "gallery-arrow" }`}>
 
       <FaIcons.FaArrowAltCircleLeft
-          className='left'
+          className={`${(currentPath === '/') ? "left" : "gallery-left" }`}
         onClick={prevSlide}
         />
 
       <FaIcons.FaArrowAltCircleRight
-        className='right'
+        className={`${(currentPath === '/') ? "right" : "gallery-right" }`}
         onClick={nextSlide}
       />
       </div>
