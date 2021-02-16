@@ -97,12 +97,9 @@
   .arrow {
     top: -9%;
   }
-
   .arrow, .gallery-left {
     left: 30px;
   }
 
   .arrow, .gallery-right {
-    right: 30px;
-  }
 }

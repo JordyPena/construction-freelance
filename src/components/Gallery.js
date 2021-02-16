@@ -18,7 +18,9 @@ const Gallery = ({match}) => {
               <p className="gallery-description">{slide.description}</p>
 
               <div className="slider-div">
+                
                 <Slider slides={slide.url} match={match}/>
+
               </div>
             </>
           );
