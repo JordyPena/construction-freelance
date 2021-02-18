@@ -1,25 +1,7 @@
-import January from "../Special-images/january.png"
-import JanuaryBp from "../Special-images/january-blueprint.jpeg"
-
-import February from "../Special-images/february.jpeg"
-import FebruaryBp from "../Special-images/february-blueprint.jpeg"
-
-import March from "../Special-images/march.jpeg"
-import MarchBp from "../Special-images/march-blueprint.jpeg"
-
-import April from "../Special-images/april.jpeg"
-import AprilBp from "../Special-images/april-blueprint.jpeg"
-
-import May from "../Special-images/may.jpeg"
-import MayBp from "../Special-images/may-blueprint.jpeg"
-
-import June from "../Special-images/june.jpeg"
-import JuneBp from "../Special-images/june-blueprint.jpeg"
-
 const data = [
   {
-    image: January,
-    Blueprint: JanuaryBp,
+    image: "/images/january.png",
+    Blueprint: "/images/january-blueprint.jpeg",
     Title: `24' x 30' x 10'`,
     KitPrice: `$17,900.00`,
     Description: `Agricultural Building`,
@@ -49,8 +31,8 @@ const data = [
   },
 
   {
-    image: February,
-    Blueprint: FebruaryBp,
+    image: "/images/february.jpeg",
+    Blueprint: "/images/february-blueprint.jpeg",
     Title: `36' x 60' x 16'`,
     KitPrice: `$40,200.00`,
     Description: `Agricultural Building`,
@@ -80,8 +62,8 @@ const data = [
   },
 
   {
-    image: March,
-    Blueprint: MarchBp,
+    image: "/images/march.jpeg",
+    Blueprint: "/images/march-blueprint.jpeg",
     Title: `30' x 30' x 14'`,
     KitPrice: `$18,200.00`,
     Description: `Agricultural Building`,
@@ -106,8 +88,8 @@ const data = [
   },
 
   {
-    image: April,
-    Blueprint: AprilBp,
+    image: "/images/april.jpeg",
+    Blueprint: "/images/april-blueprint.jpeg",
     Title: `24' x 36' x 14' with 12' x 36' Roof Only Shed`,
     KitPrice: `$24,000.00`,
     Description: `Agricultural Building`,
@@ -131,8 +113,8 @@ const data = [
   },
 
   {
-    image: May,
-    Blueprint: MayBp,
+    image:"/images/may.jpeg",
+    Blueprint:"/images/may-blueprint.jpeg",
     Title: `36' x 40' x 16'`,
     KitPrice: `$35,800.00`,
     Description: `Agricultural Building`,
@@ -158,8 +140,8 @@ const data = [
   },
 
   {
-    image: June,
-    Blueprint: JuneBp,
+    image:"/images/june.jpeg",
+    Blueprint:"/images/june-blueprint.jpeg",
     Title: `40' x 70' x 16'`,
     KitPrice: `$48,800.00`,
     Description: `Agricultural Building`,

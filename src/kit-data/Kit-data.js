@@ -1,32 +1,8 @@
-import TwentyFour from "../Kit-images/24.png";
-import TwentyFourBp from "../Kit-images/24-blueprint.jpeg";
-import TwentyFourRoof from "../Kit-images/24-roof.jpeg";
-
-import Thirty from "../Kit-images/30.png";
-import ThirtyBp from "../Kit-images/30-blueprint.jpeg";
-import ThirtyRoof from "../Kit-images/30-roof.jpeg";
-
-import ThirtySix from "../Kit-images/36.png";
-import ThirtySixBp from "../Kit-images/36-blueprint.png";
-import ThirtySixRoof from "../Kit-images/36-roof.jpeg";
-
-import Fourty from "../Kit-images/40.png";
-import FourtyBp from "../Kit-images/40-blueprint.png";
-import FourtyRoof from "../Kit-images/40-roof.jpeg";
-
-import Fifty from "../Kit-images/50.jpeg";
-import FiftyBp from "../Kit-images/50-blueprint.jpeg";
-import FiftyRoof from "../Kit-images/50-roof.jpeg";
-
-import Sixty from "../Kit-images/60.png";
-import SixtyBp from "../Kit-images/60-blueprint.png";
-import SixtyRoof from "../Kit-images/60-roof.jpeg";
-
 const data = [
   {
-    image: TwentyFour,
-    Blueprint: TwentyFourBp,
-    Roof: TwentyFourRoof,
+    image: "/images/24.png",
+    Blueprint: "/images/24-blueprint.jpeg",
+    Roof: "/images/24-roof.jpeg",
     Title: `24' x 36' x 12' Kit`,
     constructedTitle: `24' x 36' x 12'`,
     RoofTitle: `24' x 36' x 12' Roof Only Kit`,
@@ -72,9 +48,9 @@ const data = [
   },
 
   {
-    image: Thirty,
-    Blueprint: ThirtyBp,
-    Roof: ThirtyRoof,
+    image: "/images/30.png",
+    Blueprint: "/images/30-blueprint.jpeg",
+    Roof: "/images/30-roof.jpeg",
     Title: `30' x 36' x 12' Kit`,
     constructedTitle: `30' x 36' x 12'`,
     RoofTitle: `30' x 36' x 12' Roof Only Kit`,
@@ -119,10 +95,10 @@ const data = [
   },
 
   {
-    image: ThirtySix,
-    Blueprint: ThirtySixBp,
-    Roof: ThirtySixRoof,
-    Title: `36' x 48' x 16' Kit`,
+    image: "/images/36.png",
+    Blueprint: "/images/36-blueprint.png",
+    Roof: "/images/36-roof.jpeg",
+    urlTitle: `36' x 48' x 16' Kit`,
     constructedTitle: `36' x 48' x 16'`,
     RoofTitle: `36' x 48' x 16' Roof Only Kit`,
     KitPrice: `$16,150.00`,
@@ -166,9 +142,9 @@ const data = [
   },
 
   {
-    image: Fourty,
-    Blueprint: FourtyBp,
-    Roof: FourtyRoof,
+    image: "/images/40.png",
+    Blueprint: "/images/40-blueprint.png",
+    Roof: "/images/40-roof.jpeg",
     Title: `40' x 60' x 16' Kit`,
     constructedTitle: `40' x 60' x 16'`,
     RoofTitle: `40' x 60' x 16' Roof Only Kit`,
@@ -212,9 +188,9 @@ const data = [
   },
 
   {
-    image: Fifty,
-    Blueprint: FiftyBp,
-    Roof: FiftyRoof,
+    image: "/images/50.jpeg",
+    Blueprint: "/images/50-blueprint.jpeg",
+    Roof: "/images/50-roof.jpeg",
     Title: `50' x 84' x 16' Kit`,
     constructedTitle: `50' x 84' x 16'`,
     RoofTitle: `50' x 84' x 16' Roof Only Kit`,
@@ -257,9 +233,9 @@ const data = [
   },
 
   {
-    image: Sixty,
-    Blueprint: SixtyBp,
-    Roof: SixtyRoof,
+    image: "/images/60.png",
+    Blueprint: "/images/60-blueprint.png",
+    Roof: "/images/60-roof.jpeg",
     Title: `60' x 120' x 16' Kit`,
     constructedTitle: `60' x 120' x 16'`,
     RoofTitle: `60' x 120' x 16' Roof Only Kit`,

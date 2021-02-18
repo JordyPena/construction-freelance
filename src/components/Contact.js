@@ -1,6 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styling/Contact.css";
 function Contact() {
+  const [emailInput, setEmailInput] = useState('');
+  const [nameInput, setNameInput] = useState('');
+  const [phoneInput, setPhoneInput] = useState('');
+  const [buildingInput, setBuildingInput] = useState('');
+  const [messageInput, setMessageInput] = useState('');
+
+  const handleInputFields = (event) => {
+    if (event.target.name === 'email') {
+      setEmailInput(event.target.value)
+    } else if (event.target.name === 'name') {
+      setNameInput(event.target.value)
+    } else if (event.target.name === 'phone') {
+      setPhoneInput(event.target.value)
+    } else if (event.target.name === 'building') {
+      setBuildingInput(event.target.value)
+    } else if (event.target.name === 'message') {
+      setMessageInput(event.target.value)
+    }
+  }
   return (
     <>
       <div className="contact-container">
@@ -34,6 +53,8 @@ function Contact() {
               className="user-name"
               type="text"
               name="name"
+              value={nameInput}
+              onChange={handleInputFields}
               required
             />
             <label for="phone-input">Phone number</label>
@@ -42,6 +63,8 @@ function Contact() {
               className="phone-input"
               type="text"
               name="phone"
+              value={phoneInput}
+              onChange={handleInputFields}
               required
             />
             <label for="email-input">Email</label>
@@ -50,6 +73,8 @@ function Contact() {
               className="email-input"
               type="text"
               name="email"
+              value={emailInput}
+              onChange={handleInputFields}
               required
             />
             <label for="subject">Building Size</label>
@@ -57,7 +82,9 @@ function Contact() {
               placeholder="1500sq ft"
               className="subject"
               type="text"
-              name="email"
+              name="building"
+              value={buildingInput}
+              onChange={handleInputFields}
               required
             />
             <label for="message">Message</label>
@@ -65,6 +92,8 @@ function Contact() {
               placeholder="Lets chat!"
               className="message"
               name="message"
+              value={messageInput}
+              onChange={handleInputFields}
               required
             ></textarea>
             <button className="contact-button" type="submit">

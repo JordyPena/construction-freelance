@@ -1,31 +1,7 @@
-import TwentyFour from "../Kit-images/24.png";
-import TwentyFourBp from "../Kit-images/24-blueprint.jpeg";
-
-
-import Thirty from "../Kit-images/30.png";
-import ThirtyBp from "../Kit-images/30-blueprint.jpeg";
-
-
-import ThirtySix from "../Kit-images/36.png";
-import ThirtySixBp from "../Kit-images/36-blueprint.png";
-
-
-import Fourty from "../Kit-images/40.png";
-import FourtyBp from "../Kit-images/40-blueprint.png";
-
-
-import Fifty from "../Kit-images/50.jpeg";
-import FiftyBp from "../Kit-images/50-blueprint.jpeg";
-
-
-import Sixty from "../Kit-images/60.png";
-import SixtyBp from "../Kit-images/60-blueprint.png";
-
-
 const data = [
   {
-    image: TwentyFour,
-    Blueprint: TwentyFourBp,
+    image: "/images/24.png",
+    Blueprint: "/images/24-blueprint.jpeg",
     Title: `24' x 36' x 12'`,
     KitPrice: `$19,900.00`,
     Description: `Engineered Building`,
@@ -53,8 +29,8 @@ const data = [
   },
 
   {
-    image: Thirty,
-    Blueprint: ThirtyBp,
+    image: "/images/30.png",
+    Blueprint: "/images/30-blueprint.jpeg",
     Title: `30' x 36' x 12'`,
     KitPrice: `$22,150.00`,
     Description: `Engineered Building`,
@@ -80,8 +56,8 @@ const data = [
   },
 
   {
-    image: ThirtySix,
-    Blueprint: ThirtySixBp,
+    image: "/images/36.png",
+    Blueprint: "/images/36-blueprint.png",
     Title: `36' x 48' x 16'`,
     KitPrice: `$32,400.00`,
     Description: `Engineered Building`,
@@ -107,8 +83,8 @@ const data = [
   },
 
   {
-    image: Fourty,
-    Blueprint: FourtyBp,
+    image: "/images/40.png",
+    Blueprint: "/images/40-blueprint.png",
     Title: `40' x 60' x 16'`,
     KitPrice: `$43,100.00`,
     Description: `Engineered Building`,
@@ -134,8 +110,8 @@ const data = [
   },
 
   {
-    image: Fifty,
-    Blueprint: FiftyBp,
+    image: "/images/50.jpeg",
+    Blueprint: "/images/50-blueprint.jpeg",
     Title: `50' x 84' x 16'`,
     KitPrice: `$67,650.00`,
     Description: `Engineered Building`,
@@ -160,8 +136,8 @@ const data = [
   },
 
   {
-    image: Sixty,
-    Blueprint: SixtyBp,
+    image: "/images/60.png",
+    Blueprint: "/images/60-blueprint.png",
     Title: `60' x 120' x 16'`,
     KitPrice: `$94,300.00`,
     Description: `Engineered Building`,
