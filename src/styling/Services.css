@@ -57,7 +57,16 @@
   }
 
   .title-service {
-    margin-top: -10%;
+    margin-top: 2%;
   }
 
+  .gallery {
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }

@@ -1,18 +1,6 @@
-import TwentyFourRoof from "../Kit-images/24-roof.jpeg";
-
-import ThirtyRoof from "../Kit-images/30-roof.jpeg";
-
-import ThirtySixRoof from "../Kit-images/36-roof.jpeg";
-
-import FourtyRoof from "../Kit-images/40-roof.jpeg";
-
-import FiftyRoof from "../Kit-images/50-roof.jpeg";
-
-import SixtyRoof from "../Kit-images/60-roof.jpeg";
-
 const data = [
   {
-    image: TwentyFourRoof,
+    image: "/images/24-roof.jpeg",
     Title: `24' x 36' x 12' Roof Only Kit`,
     constructedTitle: `24' x 36' x 12' Roof Only`,
     KitPrice: `$5,000.00`,
@@ -44,11 +32,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    id: 7
+    id: 7,
   },
 
   {
-    image: ThirtyRoof,
+    image: "/images/30-roof.jpeg",
     Title: `30' x 36' x 12' Roof Only Kit`,
     constructedTitle: `30' x 36' x 12' Roof Only`,
     KitPrice: `$5,850.00`,
@@ -80,11 +68,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    id: 8
+    id: 8,
   },
 
   {
-    image: ThirtySixRoof,
+    image: "/images/36-roof.jpeg",
     Title: `36' x 48' x 16' Roof Only Kit`,
     constructedTitle: `36' x 48' x 16' Roof Only`,
     KitPrice: `$8,850.00`,
@@ -116,11 +104,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    id: 9
+    id: 9,
   },
 
   {
-    image: FourtyRoof,
+    image: "/images/40-roof.jpeg",
     Title: `40' x 60' x 16' Roof Only Kit`,
     constructedTitle: `40' x 60' x 16' Roof Only`,
     KitPrice: `$12,350.00`,
@@ -152,11 +140,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    id: 10
+    id: 10,
   },
 
   {
-    image: FiftyRoof,
+    image: "/images/50-roof.jpeg",
     Title: `50' x 84' x 16' Roof Only Kit`,
     constructedTitle: `50' x 84' x 16' Roof Only`,
     KitPrice: `$19,280.00`,
@@ -189,11 +177,11 @@ const data = [
     ],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-    id: 11
+    id: 11,
   },
 
   {
-    image: SixtyRoof,
+    image: "/images/60-roof.jpeg",
     Title: `60' x 120' x 16' Roof Only Kit`,
     constructedTitle: `60' x 120' x 16' Roof Only`,
     KitPrice: `$28,350.00`,
@@ -219,7 +207,7 @@ const data = [
     Features: [{ feature: `Engineering: +$1,000.00` }],
     Disclosure: `Price is for a kit to be delivered within 50 miles of our location`,
     constructedDisclosure: `Price is for a building constructed within 50 miles of our location and no backfill, concrete slab, permit, or excavation is included in the price. Customer is to provide a level hazard free site.`,
-   id: 12
+    id: 12,
   },
 ];
 

@@ -9,7 +9,6 @@ function Kit(props) {
   const redirect = () => {
     history.push("/contact");
   };
-  console.log(props.kits);
   return (
     <>
       <div className="main-contact">
