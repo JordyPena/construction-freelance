@@ -6,7 +6,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 function KitSummary(props) {
   const history = useHistory();
   const [selectedImg, setSelectedImg] = useState(props.item.image);
-console.log(props.item)
+
   const redirect = () => {
     history.push("/contact");
   };
