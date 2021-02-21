@@ -48,6 +48,7 @@
 .kit-image {
   margin: 40px;
   border-radius: 5px;
+  background-color: rgba(161, 161, 161, 0.514);
 }
 
 .shrink {
