@@ -5,7 +5,7 @@ import "../styling/Slider.css";
 const Slider = ({ slides, match }) => {
   const { path } = match;
 
-  const [currentPath, setCurrentPath] = useState(path);
+  const [currentPath] = useState(path);
   const [index, setIndex] = useState(0);
   const length = slides.length;
   const gallery = useRef();
@@ -49,17 +49,6 @@ const Slider = ({ slides, match }) => {
             onClick={nextSlide}
           />
         </div>
-
-        {/* {slides.map((url, idx) => {
-        return (
-          <div className={idx === index ? "slide active" : "slide"} key={idx}>
-            {idx === index && (
-              // <img src={url} alt="construction-building" id={`${currentPath === "/" ? "image" : "gallery-image"}`} className="image"/>
-              <div className="gallery" ref={gallery} style={{ backgroundImage: `url(${gallery})`}}></div>
-            )}
-          </div>
-        );
-      })} */}
       </section>
       <div
         className={`${currentPath === "/" ? "gallery" : "gallerySecond"}`}
