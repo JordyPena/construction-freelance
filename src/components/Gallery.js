@@ -11,7 +11,7 @@ const Gallery = ({match}) => {
             <>
               <h2 className="gallery-title">{slide.title}</h2>
               {slide.link && (
-                <a className="slide-link" href={slide.link} target="_blank">
+                <a className="slide-link" href={slide.link} target="_blank" rel="external">
                   Check out the Pumpkin Patch here
                 </a>
               )}
