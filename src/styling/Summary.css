@@ -68,6 +68,13 @@
   padding-top: 10px;
 }
 
+div.kit-image > div > div {
+  flex-wrap: initial;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
 
 @media only screen and (min-width: 1100px) {
   .summary-container {
