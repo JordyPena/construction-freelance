@@ -71,7 +71,7 @@
 div.kit-image > div {
   flex-wrap: initial !important;
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -79,7 +79,7 @@ div.kit-image > div {
 div.kit-image > div > div {
   flex-wrap: initial !important;
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
 }
