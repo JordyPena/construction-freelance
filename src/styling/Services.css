@@ -29,7 +29,7 @@
 
 .thirdServices-images {
   border-radius: 4px;
-  width: 50%;
+  width: 30%;
 }
 
 .services-headers {
@@ -40,6 +40,17 @@
   margin: 5px;
 }
 
+/* desktop 770px */
+@media only screen and (min-width: 770px) {
+  .thirdServices-images {
+    height: 30%;
+    width: 20%;
+  }
+
+  .services-images {
+    width: 40%;
+  }
+}
 /*  desktop 1100px*/
 @media only screen and (min-width: 1100px) {
   .services-column {
@@ -53,7 +64,8 @@
   }
 
   .services-images, .thirdServices-images {
-    height: 50%;
+    height: 40%;
+    width: 35%;
   }
 
   .title-service {
